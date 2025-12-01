@@ -115,7 +115,7 @@ export const NAV_LINKS: NavLink[] = [
   },
   { label: "Products", href: "#" },
   { label: "Resources", href: "#" },
-  { label: "Global Offices", href: "#" },
+  { label: "Contact", href: "/contact" },
   { label: "Schedule a Call", href: "#", isButton: true },
 ];
 

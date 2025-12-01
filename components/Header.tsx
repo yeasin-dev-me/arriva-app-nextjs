@@ -87,7 +87,7 @@ const Header: React.FC = () => {
                     {/* Main Nav Link */}
                     <a
                       href={link.href}
-                      className="text-gray-700 font-medium hover:text-blue-500 transition duration-200 flex items-center py-2"
+                      className="text-gray-700 font-semibold hover:text-blue-500 transition duration-200 flex items-center py-2"
                     >
                       {link.label}
                       {link.subLinks && (
