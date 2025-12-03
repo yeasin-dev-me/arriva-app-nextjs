@@ -25,6 +25,21 @@ const Header: React.FC = () => {
     setMobileSubMenu(mobileSubMenu === label ? null : label);
   };
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // Close mobile menu on navigation
+    setIsOpen(false);
+    
+    // If it's a hash link (section navigation), handle smooth scroll
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+    // For regular routes (/services, /industries, etc.), let Next.js handle navigation naturally
+  };
+
   return (
     <header
       className={`sticky top-0 z-50 backdrop-blur-md bg-white/95 transition-all duration-300 border-b ${
@@ -35,7 +50,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-3 md:py-4">
           {/* App Icon Only */}
           <a
-            href="#"
+            href="/"
             className="flex items-center gap-3 md:gap-4 mr-8 md:mr-12 group transition-opacity duration-300 hover:opacity-90"
             aria-label="Arriva Soft - Software Development Company"
           >
@@ -87,6 +102,7 @@ const Header: React.FC = () => {
                     {/* Main Nav Link */}
                     <a
                       href={link.href}
+                      onClick={(e) => handleNavClick(e, link.href)}
                       className="text-gray-700 font-semibold hover:text-blue-500 transition duration-200 flex items-center py-2"
                     >
                       {link.label}
@@ -132,30 +148,20 @@ const Header: React.FC = () => {
                   <a
                     href={link.href}
                     className="block px-3 py-2 rounded-md text-base font-medium bg-blue-500 text-white hover:bg-blue-600"
-                    onClick={() => setIsOpen(false)}
+                    onClick={(e) => handleNavClick(e, link.href)}
                   >
                     {link.label}
                   </a>
                 ) : (
                   // Link with potential submenu
                   <>
-                    <button
-                      className={`w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium transition duration-150 ${
-                        link.subLinks
-                          ? "text-gray-700 hover:bg-gray-50 hover:text-blue-500"
-                          : "text-gray-700 hover:bg-gray-50 hover:text-blue-500"
-                      }`}
-                      onClick={() =>
-                        link.subLinks
-                          ? toggleMobileSubMenu(link.label)
-                          : setIsOpen(false)
-                      }
-                      aria-expanded={
-                        link.subLinks ? mobileSubMenu === link.label : undefined
-                      }
-                    >
-                      {link.label}
-                      {link.subLinks && (
+                    {link.subLinks ? (
+                      <button
+                        className="w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium transition duration-150 text-gray-700 hover:bg-gray-50 hover:text-blue-500"
+                        onClick={() => toggleMobileSubMenu(link.label)}
+                        {...(link.subLinks && { 'aria-expanded': mobileSubMenu === link.label })}
+                      >
+                        {link.label}
                         <ChevronDown
                           className={`w-4 h-4 transition-transform duration-300 ${
                             mobileSubMenu === link.label
@@ -163,8 +169,16 @@ const Header: React.FC = () => {
                               : "rotate-0"
                           }`}
                         />
-                      )}
-                    </button>
+                      </button>
+                    ) : (
+                      <a
+                        href={link.href}
+                        className="w-full flex justify-between items-center px-3 py-2 rounded-md text-base font-medium transition duration-150 text-gray-700 hover:bg-gray-50 hover:text-blue-500"
+                        onClick={(e) => handleNavClick(e, link.href)}
+                      >
+                        {link.label}
+                      </a>
+                    )}
 
                     {/* Mobile Submenu Content */}
                     {link.subLinks && mobileSubMenu === link.label && (
@@ -174,7 +188,7 @@ const Header: React.FC = () => {
                             key={subLink.label}
                             href={subLink.href}
                             className="block p-2 text-sm text-gray-700 hover:bg-white rounded-md transition duration-150"
-                            onClick={() => setIsOpen(false)}
+                            onClick={(e) => handleNavClick(e, subLink.href)}
                           >
                             <span className="font-medium block">
                               {subLink.label}

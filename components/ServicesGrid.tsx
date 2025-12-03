@@ -4,7 +4,7 @@ import { servicesData } from "@/data";
 
 const ServicesGrid: React.FC = () => {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50">
+    <section id="services" className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">

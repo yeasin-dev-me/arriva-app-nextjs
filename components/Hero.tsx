@@ -11,7 +11,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ slide, onSlideChange }) => {
   return (
-    <div className="relative py-12 md:py-16 lg:py-20 bg-gradient-to-br from-white via-gray-50/30 to-blue-50/20 overflow-hidden">
+    <div id="home" className="relative py-12 md:py-16 lg:py-20 bg-gradient-to-br from-white via-gray-50/30 to-blue-50/20 overflow-hidden scroll-mt-20">
       {/* Subtle Background Elements - Very minimal */}
       <div className="absolute top-40 right-20 w-96 h-96 bg-blue-200/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 left-20 w-80 h-80 bg-blue-100/10 rounded-full blur-3xl"></div>

@@ -27,44 +27,44 @@ import type {
 export const NAV_LINKS: NavLink[] = [
   {
     label: "Services",
-    href: "#",
+    href: "/services",
     subLinks: [
       {
         label: "Custom Software",
-        href: "#",
+        href: "/services",
         description: "Build bespoke, scalable, and secure applications.",
         icon: Code,
       },
       {
         label: "Dedicated Team & Hiring",
-        href: "#",
+        href: "/services",
         description:
           "Scale your team with top remote talent & talent acquisition.",
         icon: Users,
       },
       {
         label: "Technology Consulting",
-        href: "#",
+        href: "/services",
         description: "Strategic R&D and future-proofing your technology stack.",
         icon: Zap,
       },
       {
         label: "AI & Data Science",
-        href: "#",
+        href: "/services",
         description:
           "Implement machine learning models for predictive insights.",
         icon: Cpu,
       },
       {
         label: "UX/UI Design",
-        href: "#",
+        href: "/services",
         description:
           "Create intuitive and high-converting product experiences.",
         icon: Layout,
       },
       {
         label: "Cloud & DevOps",
-        href: "#",
+        href: "/services",
         description:
           "Achieve faster deployment and robust cloud infrastructure.",
         icon: TrendingUp,
@@ -73,50 +73,50 @@ export const NAV_LINKS: NavLink[] = [
   },
   {
     label: "Industries",
-    href: "#",
+    href: "/industries",
     subLinks: [
       {
         label: "Fintech",
-        href: "#",
+        href: "/industries",
         description: "Solutions for banking, payments, and wealth management.",
         icon: DollarSign,
       },
       {
         label: "Healthcare",
-        href: "#",
+        href: "/industries",
         description: "Digital tools for patient care, records, and compliance.",
         icon: Heart,
       },
       {
         label: "eCommerce",
-        href: "#",
+        href: "/industries",
         description: "High-volume, engaging platforms and market places.",
         icon: Building,
       },
       {
         label: "EdTech",
-        href: "#",
+        href: "/industries",
         description: "Learning platforms and educational content management.",
         icon: GraduationCap,
       },
       {
         label: "Logistics",
-        href: "#",
+        href: "/industries",
         description: "Tracking, routing, and supply chain optimization.",
         icon: Truck,
       },
       {
         label: "Real Estate",
-        href: "#",
+        href: "/industries",
         description: "Property management and sales platforms.",
         icon: Home,
       },
     ],
   },
-  { label: "Products", href: "#" },
-  { label: "Resources", href: "#" },
+  { label: "Products", href: "/products" },
+  { label: "Resources", href: "/resources" },
   { label: "Contact", href: "/contact" },
-  { label: "Schedule a Call", href: "#", isButton: true },
+  { label: "Schedule a Call", href: "https://calendly.com/meeting-brainstation-23/30min", isButton: true },
 ];
 
 // Dynamic Hero Content Data
