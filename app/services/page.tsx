@@ -1,10 +1,37 @@
-'use client'
-
+import { Metadata } from 'next';
 import React from "react";
 import { ArrowRight, CheckCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SERVICES_DATA } from "@/data";
+
+export const metadata: Metadata = {
+  title: 'Our Services | Arriva Soft',
+  description: 'Explore our comprehensive software development services, including custom software, dedicated teams, AI & Data Science, and more. We are the software builder firm that delivers excellence.',
+  keywords: [
+    'custom software development services',
+    'dedicated development team',
+    'technology consulting',
+    'AI and data science',
+    'UX/UI design services',
+    'cloud and devops solutions',
+    'enterprise software services',
+    'software builder firm',
+    'Arriva Soft services',
+  ],
+  alternates: {
+    canonical: '/services',
+  },
+  openGraph: {
+    title: 'Our Services | Arriva Soft',
+    description: 'From custom development to dedicated teams, explore the services that make us a leading software builder firm.',
+    url: '/services',
+  },
+  twitter: {
+    title: 'Our Services | Arriva Soft',
+    description: 'Comprehensive software development solutions to transform your business.',
+  },
+};
 
 export default function ServicesPage() {
   return (
@@ -36,7 +63,8 @@ export default function ServicesPage() {
                 return (
                   <div
                     key={index}
-                    className="group bg-white rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+                    id={`${service.title.toLowerCase().replace(/ /g, '-').replace(/&/g, 'and')}`}
+                    className="group bg-white rounded-2xl p-8 md:p-10 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 scroll-mt-24"
                   >
                     <div className="flex items-start gap-6">
                       <div className="flex-shrink-0 w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-600 transition-colors duration-300">
@@ -50,10 +78,10 @@ export default function ServicesPage() {
                           {service.description}
                         </p>
                         <a
-                          href={service.href}
+                          href={`/contact?service=${encodeURIComponent(service.title)}`}
                           className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors group/link"
                         >
-                          <span>Learn more</span>
+                          <span>Get a Quote</span>
                           <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
                         </a>
                       </div>
@@ -135,6 +163,8 @@ export default function ServicesPage() {
               </a>
               <a
                 href="https://calendly.com/meeting-brainstation-23/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-blue-700 border-2 border-white rounded-lg hover:bg-blue-800 transition-colors"
               >
                 Schedule a Call

@@ -10,7 +10,12 @@ const nextConfig = {
   
   images: {
     unoptimized: true, // Required for static export
-    remotePatterns: [],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+      },
+    ],
   },
   
   // Ensure trailing slashes for better static hosting compatibility

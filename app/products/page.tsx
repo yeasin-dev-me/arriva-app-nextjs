@@ -1,9 +1,34 @@
-'use client'
-
+import { Metadata } from 'next';
 import React from "react";
 import { ArrowRight, Code, Zap, Shield, Globe } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: 'Our Products | Arriva Soft',
+  description: 'Discover innovative SaaS products from Arriva Soft, including our Enterprise Suite and AI Assistant Platform. Built with cutting-edge technology to transform your business.',
+  keywords: [
+    'SaaS products',
+    'AI assistant platform',
+    'enterprise software suite',
+    'business management software',
+    'cloud security solutions',
+    'Arriva Soft products',
+    'AI agent products',
+  ],
+  alternates: {
+    canonical: '/products',
+  },
+  openGraph: {
+    title: 'Our Products | Arriva Soft',
+    description: 'Innovative SaaS products including our Enterprise Suite and AI Assistant Platform, designed to transform business operations.',
+    url: '/products',
+  },
+  twitter: {
+    title: 'Our Products | Arriva Soft',
+    description: 'Discover our upcoming suite of innovative SaaS products designed to transform how businesses operate.',
+  },
+};
 
 export default function ProductsPage() {
   const products = [

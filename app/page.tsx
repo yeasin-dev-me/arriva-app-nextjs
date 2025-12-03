@@ -50,30 +50,6 @@ export default function Home() {
 
         {/* Technology Stack */}
         <TechStack />
-
-        {/* Products Section Placeholder */}
-        <section id="products" className="py-16 md:py-24 bg-white scroll-mt-20">
-          <div className="max-w-7xl mx-auto px-6 md:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Our Products
-            </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              Coming soon - Innovative products designed to transform your business
-            </p>
-          </div>
-        </section>
-
-        {/* Resources Section Placeholder */}
-        <section id="resources" className="py-16 md:py-24 bg-gray-50 scroll-mt-20">
-          <div className="max-w-7xl mx-auto px-6 md:px-8 text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Resources
-            </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              Blog posts, case studies, and guides to help you succeed
-            </p>
-          </div>
-        </section>
       </main>
 
       {/* Footer */}

@@ -1,10 +1,37 @@
-'use client'
-
+import { Metadata } from 'next';
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { industriesData } from "@/data";
+
+export const metadata: Metadata = {
+  title: 'Industries We Serve | Arriva Soft',
+  description: 'Arriva Soft provides expert software development for Fintech, Healthcare, E-commerce, and Enterprise sectors. Discover our industry-specific solutions and success stories.',
+  keywords: [
+    'fintech software development',
+    'healthcare software solutions',
+    'e-commerce platform development',
+    'enterprise software firm',
+    'logistics software',
+    'edtech solutions',
+    'real estate software',
+    'industry-specific software',
+    'Arriva Soft industries',
+  ],
+  alternates: {
+    canonical: '/industries',
+  },
+  openGraph: {
+    title: 'Industries We Serve | Arriva Soft',
+    description: 'Expert software solutions for Fintech, Healthcare, E-commerce, and more. See how we drive success in your industry.',
+    url: '/industries',
+  },
+  twitter: {
+    title: 'Industries We Serve | Arriva Soft',
+    description: 'Proven expertise across multiple sectors with 200+ successful projects delivered.',
+  },
+};
 
 export default function IndustriesPage() {
   return (

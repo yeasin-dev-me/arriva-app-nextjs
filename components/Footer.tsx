@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { Linkedin, Facebook, Twitter, Youtube } from "lucide-react";
 import { FOOTER_LINKS } from "@/data";
@@ -13,10 +14,13 @@ const Footer: React.FC = () => (
             className="inline-block hover:opacity-80 transition-opacity duration-200"
             aria-label="Arriva Soft Home"
           >
-            <img
+            <Image
               src="/arriva-soft-logo.svg"
               alt="Arriva Soft"
+              width={190}
+              height={64}
               className="h-16 w-auto brightness-200"
+              priority
             />
           </a>
           <p className="text-sm text-gray-400 max-w-sm">
@@ -26,7 +30,9 @@ const Footer: React.FC = () => (
           {/* Social Links */}
           <div className="flex space-x-4 pt-2">
             <a
-              href="#"
+              href="https://www.linkedin.com/company/arrivasoft/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="text-gray-400 hover:text-blue-500 transition"
             >
@@ -97,7 +103,7 @@ const Footer: React.FC = () => (
             {FOOTER_LINKS.company.map((link) => (
               <li key={link}>
                 <a
-                  href="#"
+                  href={`/${link.toLowerCase().replace(/ /g, '-')}`}
                   className="text-sm text-gray-400 hover:text-white transition duration-200"
                 >
                   {link}

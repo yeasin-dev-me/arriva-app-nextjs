@@ -1,9 +1,35 @@
-'use client'
-
+import { Metadata } from 'next';
+import Image from "next/image";
 import React from "react";
 import { ArrowRight, BookOpen, FileText, Video, Download } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: 'Resources & Insights | Arriva Soft',
+  description: 'Explore expert knowledge from Arriva Soft. Read our blog, case studies, and whitepapers on software development, AI, Fintech, and more to stay ahead of industry trends.',
+  keywords: [
+    'software development blog',
+    'tech case studies',
+    'fintech insights',
+    'healthcare technology whitepaper',
+    'AI development resources',
+    'software engineering best practices',
+    'Arriva Soft blog',
+  ],
+  alternates: {
+    canonical: '/resources',
+  },
+  openGraph: {
+    title: 'Resources & Insights | Arriva Soft',
+    description: 'Expert knowledge, industry insights, and practical guides to help you succeed in the tech landscape.',
+    url: '/resources',
+  },
+  twitter: {
+    title: 'Resources & Insights | Arriva Soft',
+    description: 'Explore our blog, case studies, and whitepapers to stay ahead of technology trends.',
+  },
+};
 
 export default function ResourcesPage() {
   const resourceCategories = [
@@ -134,10 +160,12 @@ export default function ResourcesPage() {
                   className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
                 >
                   <div className="relative h-48 overflow-hidden">
-                    <img
+                    <Image
                       src={resource.image}
                       alt={resource.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-110"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       loading="lazy"
                     />
                     <div className="absolute top-4 left-4">
