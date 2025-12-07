@@ -1,7 +1,7 @@
 # Enable GitHub Pages via API
 # Usage: Run this script to enable GitHub Pages for the repository
 
-$owner = "ya-shuvo30"
+$owner = "yeasin-dev-me"
 $repo = "arriva-app-nextjs"
 
 Write-Host "`nEnabling GitHub Pages for $owner/$repo..." -ForegroundColor Yellow

@@ -187,7 +187,7 @@ Type: A     Host: @       Value: 185.199.108.153
 Type: A     Host: @       Value: 185.199.109.153
 Type: A     Host: @       Value: 185.199.110.153
 Type: A     Host: @       Value: 185.199.111.153
-Type: CNAME Host: www     Value: ya-shuvo30.github.io.
+Type: CNAME Host: www     Value: yeasin-dev-me.github.io.
 ```
 
 ### Deployment Flow

@@ -4,7 +4,7 @@ This guide covers deploying the Arriva Soft website to GitHub Pages with a custo
 
 ## Prerequisites
 
-- GitHub repository: `ya-shuvo30/arriva-app-nextjs`
+- GitHub repository: `yeasin-dev-me/arriva-app-nextjs`
 - Custom domain purchased from Namecheap
 - GitHub account with repository access
 
@@ -48,7 +48,7 @@ Don't include both. Using `www` is recommended for better flexibility.
 | A     | @    | 185.199.109.153            | Automatic |
 | A     | @    | 185.199.110.153            | Automatic |
 | A     | @    | 185.199.111.153            | Automatic |
-| CNAME | www  | ya-shuvo30.github.io       | Automatic |
+| CNAME | www  | yeasin-dev-me.github.io    | Automatic |
 
 5. Remove any conflicting records (old A records, CNAME records, etc.)
 
@@ -199,7 +199,7 @@ The site is configured for optimal performance:
 ### Check Deployment Status
 ```bash
 # View in browser
-https://github.com/ya-shuvo30/arriva-app-nextjs/actions
+https://github.com/yeasin-dev-me/arriva-app-nextjs/actions
 
 # Or use GitHub CLI
 gh run list --workflow=deploy.yml

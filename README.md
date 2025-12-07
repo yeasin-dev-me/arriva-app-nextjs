@@ -106,7 +106,7 @@ This project is configured for automatic deployment to GitHub Pages with custom 
 
 ### Deployment Status
 
-Check deployment status: [GitHub Actions](https://github.com/ya-shuvo30/arriva-app-nextjs/actions)
+Check deployment status: [GitHub Actions](https://github.com/yeasin-dev-me/arriva-app-nextjs/actions)
 
 ## 🎨 Key Components
 

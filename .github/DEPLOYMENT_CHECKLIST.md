@@ -35,7 +35,7 @@
   - `A Record` | `@` | `185.199.110.153`
   - `A Record` | `@` | `185.199.111.153`
 - [ ] Add CNAME record (if using www):
-  - `CNAME` | `www` | `ya-shuvo30.github.io`
+  - `CNAME` | `www` | `yeasin-dev-me.github.io`
 - [ ] Set TTL to `Automatic` for all records
 - [ ] Save all changes
 
@@ -151,9 +151,9 @@
 - `DEPLOYMENT.md` - Full deployment guide
 
 ### Important URLs
-- Repository: https://github.com/ya-shuvo30/arriva-app-nextjs
-- Actions: https://github.com/ya-shuvo30/arriva-app-nextjs/actions
-- Settings: https://github.com/ya-shuvo30/arriva-app-nextjs/settings/pages
+- Repository: https://github.com/yeasin-dev-me/arriva-app-nextjs
+- Actions: https://github.com/yeasin-dev-me/arriva-app-nextjs/actions
+- Settings: https://github.com/yeasin-dev-me/arriva-app-nextjs/settings/pages
 
 ### DNS Check Commands
 ```bash

@@ -10,7 +10,7 @@ www.arrivasoft.com
 ```
 
 ### 2. Configure GitHub Pages
-1. Go to: https://github.com/ya-shuvo30/arriva-app-nextjs/settings/pages
+1. Go to: https://github.com/yeasin-dev-me/arriva-app-nextjs/settings/pages
 2. Under **Source**, select: `GitHub Actions`
 3. Click **Save**
 
@@ -25,7 +25,7 @@ www.arrivasoft.com
 | A     | @    | 185.199.109.153     |
 | A     | @    | 185.199.110.153     |
 | A     | @    | 185.199.111.153     |
-| CNAME | www  | ya-shuvo30.github.io |
+| CNAME | www  | yeasin-dev-me.github.io |
 
 4. Delete any conflicting records
 5. Save
@@ -41,13 +41,13 @@ git push origin main
 ```
 
 ### Option 2: Manual
-1. Go to: https://github.com/ya-shuvo30/arriva-app-nextjs/actions
+1. Go to: https://github.com/yeasin-dev-me/arriva-app-nextjs/actions
 2. Click "Deploy to GitHub Pages"
 3. Click "Run workflow" → "Run workflow"
 
 ## Verify
 
-1. **Check deployment:** https://github.com/ya-shuvo30/arriva-app-nextjs/actions
+1. **Check deployment:** https://github.com/yeasin-dev-me/arriva-app-nextjs/actions
 2. **Wait for DNS:** 24-48 hours (usually faster)
 3. **Visit site:** https://yourdomain.com
 4. **Enable HTTPS:** Settings → Pages → Check "Enforce HTTPS"
