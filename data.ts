@@ -21,6 +21,12 @@ import type {
   EventBanner,
   ServiceCard,
   FooterLinks,
+  HomeHeroContent,
+  HomeCapability,
+  HomeCtaContent,
+  ServicesHeroContent,
+  ServiceDetailSection,
+  ServicesSupportContent,
 } from "./types";
 
 // Navigation Data
@@ -204,6 +210,87 @@ export const HERO_SLIDES: HeroContent[] = [
   },
 ];
 
+export const HOME_HERO_CONTENT: HomeHeroContent = {
+  eyebrow: "Arriva Soft",
+  title: "Building Scalable Digital Products for Startups & Growing Businesses",
+  description:
+    "We design and develop custom digital products, SaaS platforms, and internal business systems that replace manual workflows and help organizations scale with confidence.",
+  highlight:
+    "From startup ideas to enterprise-grade systems — Arriva Soft builds software that grows with your business.",
+  primaryCta: {
+    label: "Request a Free Consultation",
+    href: "/contact",
+  },
+  secondaryCta: {
+    label: "Book a Discovery Call",
+    href: "/contact",
+  },
+};
+
+export const HOME_AUDIENCES: string[] = [
+  "Startup founders & product teams",
+  "Clinics & healthcare providers",
+  "Real estate & property businesses",
+  "Logistics & supply chain companies",
+  "Education & coaching platforms",
+  "SMEs replacing Excel & manual systems",
+];
+
+export const HOME_CAPABILITIES: HomeCapability[] = [
+  {
+    title: "Startup Product Studio",
+    description:
+      "We help founders turn ideas into market-ready SaaS products using modern, scalable technology.",
+    items: [
+      "SaaS MVP development",
+      "Product architecture & roadmap",
+      "Subscription & payment systems",
+      "Admin dashboards & analytics",
+    ],
+  },
+  {
+    title: "Industry-Focused Software Solutions",
+    description:
+      "We build custom systems tailored to specific business domains, not generic software.",
+    items: [
+      "HealthTech & clinic management",
+      "Real estate & property platforms",
+      "Logistics & delivery systems",
+      "Education & coaching platforms",
+      "SME internal tools & automation",
+    ],
+  },
+  {
+    title: "Business Websites & Platforms",
+    description:
+      "We design high-performance, conversion-focused websites for growing businesses.",
+    items: [
+      "New businesses & startups",
+      "E-commerce stores",
+      "Clothing & fashion brands",
+      "Local & service-based companies",
+    ],
+  },
+];
+
+export const HOME_WHY_POINTS: string[] = [
+  "Product-driven approach",
+  "Clean, scalable architecture",
+  "Industry-focused expertise",
+  "Long-term support & growth mindset",
+];
+
+export const HOME_CTA: HomeCtaContent = {
+  title: "Let’s Build Something Valuable",
+  description:
+    "Have an idea or a business problem? Talk to our team and explore how software can simplify your operations.",
+  primaryCta: {
+    label: "Book a Discovery Call",
+    href: "/contact",
+  },
+};
+
+
 // Event Banner Data
 export const EVENT_BANNERS: EventBanner[] = [
   {
@@ -276,6 +363,197 @@ export const SERVICES_DATA: ServiceCard[] = [
     href: "#",
   },
 ];
+
+export const SERVICES_HERO_CONTENT: ServicesHeroContent = {
+  eyebrow: "Arriva Soft Services",
+  title: "End-to-End Software Development for Real Business Outcomes",
+  description:
+    "We provide end-to-end software development services focused on performance, scalability, and business impact.",
+};
+
+export const SERVICE_DETAIL_SECTIONS: ServiceDetailSection[] = [
+    {
+      id: "saas-mvp",
+      eyebrow: "1️⃣",
+      title: "SaaS MVP & Product Development",
+      intro: "Ideal for startup founders, early-stage SaaS teams, and non-technical entrepreneurs who need to launch quickly without compromising quality.",
+      blocks: [
+        {
+          label: "Ideal For",
+          items: ["Startup founders", "Early-stage SaaS teams", "Non-technical entrepreneurs"],
+        },
+        {
+          label: "What We Build",
+          items: [
+            "SaaS MVPs",
+            "User authentication & roles",
+            "Subscription & payment integration",
+            "Admin dashboards",
+          ],
+        },
+      ],
+      outcome: "A production-ready SaaS product built for growth.",
+    },
+    {
+      id: "healthtech",
+      eyebrow: "2️⃣",
+      title: "HealthTech & Clinic Management",
+      highlight: "⭐⭐⭐⭐",
+      intro: "Healthcare systems need structured digital workflows and many clinics still rely on Excel and paper.",
+      blocks: [
+        {
+          label: "Who We Work With",
+          items: ["Founders", "Operations Managers", "IT Managers", "Medical Directors"],
+        },
+        {
+          label: "Solutions",
+          items: [
+            "Patient management systems",
+            "Appointment booking & scheduling",
+            "Doctor & staff dashboards",
+            "PDF reports & digital forms",
+          ],
+        },
+        {
+          label: "Best Markets",
+          items: ["Bangladesh", "Middle East", "UK (private clinics)"]
+        },
+      ],
+    },
+    {
+      id: "real-estate",
+      eyebrow: "3️⃣",
+      title: "Real Estate & Property Management",
+      highlight: "⭐⭐⭐⭐",
+      intro: "High-value clients demand tailored platforms with strong CRM capabilities and data visibility.",
+      blocks: [
+        {
+          label: "Decision Makers",
+          items: ["Managing Directors", "Operations Heads", "Business Development Managers"],
+        },
+        {
+          label: "What We Build",
+          items: [
+            "Property management systems",
+            "Lead tracking CRM",
+            "Agent dashboards",
+            "Booking & payment systems",
+          ],
+        },
+      ],
+    },
+    {
+      id: "logistics",
+      eyebrow: "4️⃣",
+      title: "Logistics, Delivery & Supply Chain",
+      highlight: "⭐⭐⭐⭐",
+      intro: "Manual tracking creates inefficiency—operations teams need real-time visibility and automation.",
+      blocks: [
+        {
+          label: "Who We Support",
+          items: ["Founders", "Operations Managers", "IT Managers"],
+        },
+        {
+          label: "Solutions",
+          items: [
+            "Order & shipment tracking systems",
+            "Driver & delivery management",
+            "Admin dashboards",
+            "ERP-lite internal tools",
+          ],
+        },
+      ],
+    },
+    {
+      id: "education",
+      eyebrow: "5️⃣",
+      title: "Education & Coaching Platforms",
+      highlight: "⭐⭐⭐⭐",
+      intro: "Coaching and online education continue to scale—institutions want branded, secure platforms.",
+      blocks: [
+        {
+          label: "Who We Work With",
+          items: ["Founders", "Program Directors", "Operations Managers"],
+        },
+        {
+          label: "What We Offer",
+          items: [
+            "Learning Management Systems (LMS)",
+            "Student & teacher portals",
+            "Course access & payment systems",
+            "Admin analytics & reports",
+          ],
+        },
+      ],
+    },
+    {
+      id: "sme-tools",
+      eyebrow: "6️⃣",
+      title: "SME Internal Tools & Automation",
+      highlight: "⭐⭐⭐⭐⭐",
+      intro: "Highly profitable and underserved businesses are eager to replace Excel with purpose-built software.",
+      blocks: [
+        {
+          label: "Common Clients",
+          items: [
+            "Insurance brokers",
+            "Accounting firms",
+            "HR consultancies",
+            "Manufacturing & distribution companies",
+          ],
+        },
+        {
+          label: "Solutions",
+          items: [
+            "Internal dashboards",
+            "Workflow automation",
+            "Reporting systems",
+            "Role-based access platforms",
+          ],
+        },
+      ],
+    },
+    {
+      id: "custom-websites",
+      eyebrow: "7️⃣",
+      title: "Custom Website Development",
+      intro: "High-performance, conversion-focused websites with scalable architecture behind the scenes.",
+      blocks: [
+        {
+          label: "Industries We Serve",
+          items: [
+            "New businesses & startups",
+            "E-commerce platforms",
+            "Clothing & fashion stores",
+            "Restaurants & local services",
+          ],
+        },
+        {
+          label: "What Makes Our Websites Different",
+          items: [
+            "Custom UI (no generic templates)",
+            "SEO-optimized & fast loading",
+            "Scalable backend-ready architecture",
+          ],
+        },
+      ],
+    },
+];
+
+export const SERVICES_SUPPORT_CONTENT: ServicesSupportContent = {
+  title: "Maintenance, Support & Growth",
+  description: "We offer long-term partnerships through monthly retainers.",
+  items: [
+    "Feature updates",
+    "Bug fixes & monitoring",
+    "Performance optimization",
+    "System improvements",
+  ],
+  cta: {
+    label: "Contact Arriva Soft",
+    href: "/contact",
+  },
+};
 
 // Footer Links Data
 export const FOOTER_LINKS: FooterLinks = {

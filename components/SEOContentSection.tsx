@@ -14,13 +14,13 @@ const SEOContentSection: React.FC = () => {
                 Why Choose Arriva Soft
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
-                Your Trusted Software Development Agency Since 2001
+                AI-Native Software Studio for Bold Startups
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                <strong>Arriva Soft</strong> is a premier <strong>software development company</strong> and <strong>software builder firm</strong> with over 23 years of experience delivering cutting-edge solutions. We specialize in <strong>custom software development</strong>, <strong>web application development</strong>, <strong>mobile app development</strong>, and innovative <strong>AI agent products</strong>.
+                <strong>Arriva Soft</strong> is a world-class <strong>software development company</strong> and <strong>AI product studio</strong> launched in 2025 to help founders ship faster. We specialize in <strong>custom software development</strong>, <strong>web application development</strong>, <strong>mobile app development</strong>, and next-gen <strong>AI agent products</strong> crafted by startup-native squads.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                As a leading <strong>software development agency</strong>, we&apos;ve successfully delivered 200+ projects for clients across Fintech, Healthcare, E-commerce, and Enterprise sectors worldwide.
+                Built by veteran builders from high-growth companies, our <strong>software development agency</strong> embeds multi-disciplinary pods that launch MVPs, scale platforms, and guide product strategy for venture-backed founders across Fintech, Healthcare, E-commerce, and Enterprise.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
@@ -34,22 +34,22 @@ const SEOContentSection: React.FC = () => {
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-semibold text-gray-900">850+ Developers</p>
-                    <p className="text-sm text-gray-600">Expert tech professionals</p>
+                    <p className="font-semibold text-gray-900">150+ Product Engineers</p>
+                    <p className="text-sm text-gray-600">Full-stack, mobile, and AI talent</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold text-gray-900">98% Client Satisfaction</p>
-                    <p className="text-sm text-gray-600">Proven track record</p>
+                    <p className="text-sm text-gray-600">Founder-obsessed delivery</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-semibold text-gray-900">6 Global Offices</p>
-                    <p className="text-sm text-gray-600">Worldwide presence</p>
+                    <p className="font-semibold text-gray-900">Global Launch Cities</p>
+                    <p className="text-sm text-gray-600">SF · London · Singapore hubs</p>
                   </div>
                 </div>
               </div>
@@ -100,19 +100,19 @@ const SEOContentSection: React.FC = () => {
             
             <div className="text-gray-700 space-y-4 leading-relaxed">
               <p>
-                <strong>Arriva Soft</strong> is a globally recognized <strong>software development agency</strong> headquartered in Bangladesh with offices across 6 countries. Since our founding in 2001, we have been at the forefront of <strong>custom software development</strong>, helping businesses transform their digital presence through innovative technology solutions.
-              </p>
-              
-              <p>
-                Our expertise spans across <strong>web application development</strong>, <strong>mobile app development</strong>, <strong>enterprise software solutions</strong>, and cutting-edge <strong>AI agent products</strong>. Whether you need a responsive web application, a native mobile app for iOS and Android, or intelligent AI-powered automation, our team of 850+ expert developers delivers solutions that drive real business results.
+                <strong>Arriva Soft</strong> is a globally distributed <strong>software development agency</strong> headquartered in Bangladesh with hybrid teams across North America, Europe, and Asia. Founded in 2025, we blend product strategy, design, and engineering to help startups launch faster without sacrificing quality.
               </p>
 
               <p>
-                As a trusted <strong>software builder firm</strong>, we specialize in building scalable solutions for industries including <strong>Fintech</strong>, <strong>Healthcare</strong>, <strong>E-commerce</strong>, <strong>EdTech</strong>, and <strong>Enterprise</strong>. Our ISO 27001 certification ensures that every project meets the highest standards of security and quality.
+                Our expertise spans <strong>web application development</strong>, <strong>mobile app development</strong>, <strong>enterprise software solutions</strong>, and breakthrough <strong>AI agent products</strong>. Whether you need a market-ready MVP, a native mobile experience, or intelligent automation, our product strategists and 150+ engineers deliver measurable outcomes.
               </p>
 
               <p>
-                Looking for a reliable <strong>software development company</strong> to bring your vision to life? Whether it&apos;s <strong>web development</strong>, <strong>app development</strong>, or <strong>AI development</strong>, Arriva Soft is your trusted partner for digital transformation. Contact us today for a free consultation and discover how our <strong>software development services</strong> can accelerate your business growth.
+                As a trusted <strong>software builder firm</strong>, we create scalable solutions for <strong>Fintech</strong>, <strong>Healthcare</strong>, <strong>E-commerce</strong>, <strong>EdTech</strong>, and <strong>Enterprise</strong> teams. ISO 27001 controls and modern DevSecOps practices keep every release secure from day one.
+              </p>
+
+              <p>
+                Looking for a reliable <strong>software development company</strong> to bring your vision to life? Whether it&apos;s <strong>web development</strong>, <strong>app development</strong>, or <strong>AI development</strong>, Arriva Soft is the startup-friendly partner that helps you validate, iterate, and scale with confidence.
               </p>
             </div>
 

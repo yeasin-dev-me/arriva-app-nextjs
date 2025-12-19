@@ -2,7 +2,6 @@ import React from "react";
 import { ArrowRight, Play, CheckCircle, Shield, Users } from "lucide-react";
 import { HERO_SLIDES } from "@/data";
 import type { HeroContent } from "@/types";
-import DashboardCarousel from "@/components/DashboardCarousel";
 
 interface HeroProps {
   slide: HeroContent;
@@ -23,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({ slide, onSlideChange }) => {
             {/* Trust Badge Pill */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-full text-sm font-semibold text-blue-700">
               <Shield className="w-4 h-4" />
-              ISO 27001 Certified • 850+ Tech Professionals
+              World-Class AI Product Studio • Founded 2025
             </div>
 
             {/* Main Headline */}
@@ -101,49 +100,54 @@ const Hero: React.FC<HeroProps> = ({ slide, onSlideChange }) => {
 
           {/* Right Column: Visual Elements - 45% width */}
           <div className="relative flex flex-col space-y-6">
-            {/* ISO Badge - Top Right Corner */}
-            <div className="absolute top-4 right-4 z-10 px-3 py-1 bg-yellow-50 text-yellow-700 rounded-full text-xs font-semibold flex items-center gap-1 shadow-md">
-              <Shield className="w-3 h-3" />
-              ISO 27001
+            <div className="absolute top-4 right-4 z-10 px-4 py-1 bg-blue-600 text-white rounded-full text-xs font-semibold shadow-lg">
+              Launched 2025
             </div>
 
-            {/* Project Order Dashboard Carousel */}
-            <div className="bg-white rounded-2xl shadow-xl p-2 md:p-4 border border-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl">
-              <DashboardCarousel />
-            </div>
-
-            {/* "2001 Est." Badge - Top Right */}
-            <div className="absolute -top-2 -right-2 bg-blue-600 text-white px-6 py-3 rounded-2xl shadow-lg">
-              <p className="text-3xl md:text-4xl font-bold leading-none">
-                2001
+            <div className="bg-gradient-to-br from-blue-600 via-indigo-600 to-blue-800 rounded-2xl shadow-2xl p-6 md:p-8 text-white border border-blue-500/40 relative overflow-hidden">
+              <div className="absolute inset-y-0 right-0 w-1/2 bg-white/5 blur-3xl rounded-full pointer-events-none"></div>
+              <p className="text-xs tracking-[0.2em] uppercase text-blue-100/80 font-semibold mb-4">
+                AI Product Studio
               </p>
-              <p className="text-xs opacity-90 leading-none mt-1">Est.</p>
+              <h3 className="text-3xl font-bold leading-snug">
+                World-class shipping squads for breakout founders.
+              </h3>
+              <p className="text-base text-blue-100/90 mt-4 leading-relaxed">
+                We launch MVPs, scale AI stacks, and embed product leaders directly with your team within days.
+              </p>
+              <div className="grid grid-cols-2 gap-6 mt-6">
+                <div>
+                  <p className="text-4xl font-bold">48h</p>
+                  <p className="text-sm text-blue-100">Average kickoff</p>
+                </div>
+                <div>
+                  <p className="text-4xl font-bold">12</p>
+                  <p className="text-sm text-blue-100">AI product pods</p>
+                </div>
+              </div>
             </div>
-            {/* Statistics Grid - Clean 2x2 Layout */}
+
             <div className="grid grid-cols-2 gap-4 w-full max-w-lg">
-              {/* Global Offices Card */}
               <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                 <Users className="w-8 h-8 text-blue-600 mb-3" />
-                <p className="text-4xl font-bold text-blue-600 mb-1">6</p>
+                <p className="text-4xl font-bold text-gray-900 mb-1">150+</p>
                 <p className="text-sm text-gray-600 font-medium">
-                  Global Offices
+                  Founding Engineers
                 </p>
               </div>
 
-              {/* ISO Certification Card */}
               <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
                 <Shield className="w-8 h-8 text-blue-600 mb-3" />
-                <p className="text-3xl font-bold text-blue-600 mb-1">
+                <p className="text-3xl font-bold text-gray-900 mb-1">
                   ISO 27001
                 </p>
                 <p className="text-sm text-gray-600 font-medium">
-                  Certified Teams
+                  Security Ready
                 </p>
               </div>
             </div>
 
-            {/* Trust Bar */}
-            <div className="flex items-center gap-4 w-full max-w-lg">
+            <div className="flex flex-col md:flex-row md:items-center gap-4 w-full max-w-lg bg-white/80 border border-gray-100 rounded-2xl p-5 shadow-lg">
               <div className="flex -space-x-3">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 border-2 border-white shadow-md"></div>
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-green-500 to-green-600 border-2 border-white shadow-md"></div>
@@ -153,9 +157,14 @@ const Hero: React.FC<HeroProps> = ({ slide, onSlideChange }) => {
                   +100
                 </div>
               </div>
-              <p className="text-sm text-gray-600 font-medium">
-                Join 100+ companies worldwide
-              </p>
+              <div>
+                <p className="text-sm font-semibold text-gray-900">
+                  Backed by tier-one accelerators
+                </p>
+                <p className="text-sm text-gray-600">
+                  Partnering with venture-backed founders across SF, London, and Singapore.
+                </p>
+              </div>
             </div>
           </div>
         </div>

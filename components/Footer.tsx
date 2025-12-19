@@ -24,8 +24,8 @@ const Footer: React.FC = () => (
             />
           </a>
           <p className="text-sm text-gray-400 max-w-sm">
-            Driving digital innovation and delivering highly scalable, secure
-            software solutions globally since 2001.
+            Born in 2025, we build secure, scalable software and AI products
+            for founders that need world-class execution from day zero.
           </p>
           {/* Social Links */}
           <div className="flex space-x-4 pt-2">

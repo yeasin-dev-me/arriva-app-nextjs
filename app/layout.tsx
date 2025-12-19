@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     default: 'Arriva Soft | Software Development Company | Web & App Development Agency',
     template: '%s | Arriva Soft',
   },
-  description: 'Arriva Soft is a leading software development company and software builder firm specializing in custom software development, web development, mobile app development, and AI agent products. 23+ years experience, 850+ developers, ISO 27001 certified. Get a free consultation today.',
+  description: 'Arriva Soft is a world-class software development company and AI product studio launched in 2025. We build custom software, web and mobile apps, and secure AI agents for venture-backed teams.',
   keywords: [
     'Arriva Soft',
     'software development company',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     url: 'https://www.arrivasofts.com',
     siteName: 'Arriva Soft',
     title: 'Arriva Soft | Software Development Company | Web & App Development',
-    description: 'Leading software development company offering custom software, web development, mobile app development, and AI solutions. 23+ years experience, 850+ developers. Contact us for a free quote.',
+    description: 'World-class software and AI product studio delivering custom web, mobile, and AI solutions for modern startups. Founded in 2025 with ISO 27001 controls.',
     images: [
       {
         url: '/og-image.svg',
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Arriva Soft | Software Development Company | Web & App Development',
-    description: 'Top software development company for web, mobile, and AI solutions. Custom software development, app development, and enterprise solutions. Get a free consultation.',
+    description: 'World-class software studio for web, mobile, and AI solutions. Custom software development, app development, and enterprise solutions for modern startups.',
     images: ['/og-image.svg'],
     creator: '@ArrivaSoft',
   },
@@ -67,13 +67,10 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/app-icon.svg', type: 'image/svg+xml' },
-      { url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
-      { url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
-      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon-48.png', sizes: '48x48', type: 'image/png' },
     ],
     shortcut: '/favicon.ico',
-    apple: '/app-icon.svg',
   },
 }
 
@@ -98,8 +95,8 @@ export default function RootLayout({
               name: 'Arriva Soft',
               url: 'https://www.arrivasofts.com',
               logo: 'https://www.arrivasofts.com/app-icon.svg',
-              description: 'A leading software builder firm and development agency specializing in web development, app development, and AI agent products.',
-              foundingDate: '2001',
+              description: 'A world-class software builder firm and AI product studio specializing in web development, app development, and intelligent agent products.',
+              foundingDate: '2025',
               areaServed: 'Worldwide',
               contactPoint: {
                 '@type': 'ContactPoint',

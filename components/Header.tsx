@@ -79,7 +79,7 @@ const Header: React.FC = () => {
                 </span>
               </div>
               <span className="text-xs md:text-sm font-medium text-gray-500 tracking-wide">
-                Est. 2001
+                Launched 2025
               </span>
             </div>
           </a>

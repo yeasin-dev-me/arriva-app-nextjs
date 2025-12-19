@@ -83,15 +83,15 @@ const IndustriesSection: React.FC = () => {
           </div>
           <div>
             <p className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
-              850+
+              150+
             </p>
-            <p className="text-gray-600">Tech Professionals</p>
+            <p className="text-gray-600">Product Engineers</p>
           </div>
           <div>
             <p className="text-4xl md:text-5xl font-bold text-gray-900 mb-2">
-              23+
+              2025
             </p>
-            <p className="text-gray-600">Years Experience</p>
+            <p className="text-gray-600">Launch Year</p>
           </div>
         </div>
       </div>

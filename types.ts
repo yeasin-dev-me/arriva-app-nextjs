@@ -118,3 +118,61 @@ export interface FooterLinks {
   industries: string[];
   company: string[];
 }
+
+export interface CtaButton {
+  label: string;
+  href: string;
+}
+
+export interface HomeHeroContent {
+  eyebrow: string;
+  title: string;
+  description: string;
+  highlight: string;
+  primaryCta: CtaButton;
+  secondaryCta?: CtaButton;
+}
+
+export interface HomeCapability {
+  title: string;
+  description: string;
+  items: string[];
+}
+
+export interface HomeWhyContent {
+  points: string[];
+}
+
+export interface HomeCtaContent {
+  title: string;
+  description: string;
+  primaryCta: CtaButton;
+}
+
+export interface ServicesHeroContent {
+  eyebrow: string;
+  title: string;
+  description: string;
+}
+
+export interface ServiceDetailBlock {
+  label: string;
+  items: string[];
+}
+
+export interface ServiceDetailSection {
+  id: string;
+  eyebrow?: string;
+  title: string;
+  highlight?: string;
+  intro: string;
+  blocks: ServiceDetailBlock[];
+  outcome?: string;
+}
+
+export interface ServicesSupportContent {
+  title: string;
+  description: string;
+  items: string[];
+  cta: CtaButton;
+}
