@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'AI agent products',
   ],
   alternates: {
-    canonical: '/products',
+    canonical: '/products/',
   },
   openGraph: {
     title: 'Our Products | Arriva Soft',

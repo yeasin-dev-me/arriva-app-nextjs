@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'Arriva Soft industries',
   ],
   alternates: {
-    canonical: '/industries',
+    canonical: '/industries/',
   },
   openGraph: {
     title: 'Industries We Serve | Arriva Soft',

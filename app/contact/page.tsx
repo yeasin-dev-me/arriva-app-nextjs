@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     'AI agent project inquiry',
   ],
   alternates: {
-    canonical: '/contact',
+    canonical: '/contact/',
   },
   openGraph: {
     title: 'Contact Arriva Soft | Software Development & AI Agency',

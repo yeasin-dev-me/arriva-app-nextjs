@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     creator: '@ArrivaSoft',
   },
   alternates: {
-    canonical: 'https://www.arrivasofts.com',
+    canonical: './',
   },
   icons: {
     icon: [

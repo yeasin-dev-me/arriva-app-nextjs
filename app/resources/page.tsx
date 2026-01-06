@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'Arriva Soft blog',
   ],
   alternates: {
-    canonical: '/resources',
+    canonical: '/resources/',
   },
   openGraph: {
     title: 'Resources & Insights | Arriva Soft',

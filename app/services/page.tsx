@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'Arriva Soft services',
   ],
   alternates: {
-    canonical: '/services',
+    canonical: '/services/',
   },
   openGraph: {
     title: 'Software Development Services | Web & App Development | Arriva Soft',

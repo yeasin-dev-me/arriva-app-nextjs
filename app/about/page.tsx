@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'enterprise software team',
   ],
   alternates: {
-    canonical: '/about',
+    canonical: '/about/',
   },
   openGraph: {
     title: 'About Arriva Soft | Software Builder Firm & AI Agency',
